@@ -1,0 +1,11 @@
+D:\GitHub\dotnetCore\TodoApi\bin\Debug\netcoreapp2.0\TodoApi.deps.json
+D:\GitHub\dotnetCore\TodoApi\bin\Debug\netcoreapp2.0\TodoApi.runtimeconfig.json
+D:\GitHub\dotnetCore\TodoApi\bin\Debug\netcoreapp2.0\TodoApi.runtimeconfig.dev.json
+D:\GitHub\dotnetCore\TodoApi\bin\Debug\netcoreapp2.0\TodoApi.dll
+D:\GitHub\dotnetCore\TodoApi\bin\Debug\netcoreapp2.0\TodoApi.pdb
+D:\GitHub\dotnetCore\TodoApi\obj\Debug\netcoreapp2.0\TodoApi.csprojResolveAssemblyReference.cache
+D:\GitHub\dotnetCore\TodoApi\obj\Debug\netcoreapp2.0\TodoApi.csproj.CoreCompileInputs.cache
+D:\GitHub\dotnetCore\TodoApi\obj\Debug\netcoreapp2.0\TodoApi.AssemblyInfoInputs.cache
+D:\GitHub\dotnetCore\TodoApi\obj\Debug\netcoreapp2.0\TodoApi.AssemblyInfo.cs
+D:\GitHub\dotnetCore\TodoApi\obj\Debug\netcoreapp2.0\TodoApi.dll
+D:\GitHub\dotnetCore\TodoApi\obj\Debug\netcoreapp2.0\TodoApi.pdb
