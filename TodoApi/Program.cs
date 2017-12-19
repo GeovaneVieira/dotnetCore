@@ -19,8 +19,8 @@ namespace TodoApi
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                //.UseKestrel()
-                //.UseUrls("http://*:5000")
+                .UseKestrel()
+                .UseUrls("http://*:5000")
                 .UseStartup<Startup>()
                 .Build();
     }
