@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Devart.Data.Oracle;
 using Microsoft.AspNetCore.Mvc;
+using TodoApi.Models;
+using Dapper;
 
 namespace TodoApi.Controllers
 {
@@ -39,6 +42,22 @@ namespace TodoApi.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+        }
+
+        [HttpGet]
+        public async Task<IEnumerable<Aluno>> ObterAlunos()
+        {
+            string oracleConnectionString = "User ID=SLounge; Password=SloungeAdmin; Direct=true; Host=172.31.42.239; Service Name=xe; Port=1521;";
+
+            using (var conn = new OracleConnection(oracleConnectionString))
+            {
+
+                conn.Open();
+                IEnumerable<Aluno> lista = new List<Aluno>();
+                lista = await conn.QueryAsync<Aluno>("SELECT Id, NOME, NOME_MEIO, SOBRENOME  FROM SL_ALUNO");
+
+                return lista.ToList();
+            }
         }
     }
 }

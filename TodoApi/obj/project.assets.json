@@ -2,6 +2,62 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
+      "Dapper/1.50.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.11",
+          "System.Collections.Concurrent": "4.0.12",
+          "System.Collections.NonGeneric": "4.0.1",
+          "System.Data.SqlClient": "4.1.0",
+          "System.Dynamic.Runtime": "4.0.11",
+          "System.Linq": "4.1.0",
+          "System.Reflection": "4.1.0",
+          "System.Reflection.Emit": "4.0.1",
+          "System.Reflection.Emit.Lightweight": "4.0.1",
+          "System.Reflection.Extensions": "4.0.1",
+          "System.Reflection.TypeExtensions": "4.1.0",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Text.RegularExpressions": "4.1.0",
+          "System.Threading": "4.0.11",
+          "System.Xml.XDocument": "4.0.11",
+          "System.Xml.XmlDocument": "4.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/Dapper.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Dapper.dll": {}
+        }
+      },
+      "Devart.Data/5.0.1805": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.Registry": "4.4.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Devart.Data.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Devart.Data.dll": {}
+        }
+      },
+      "Devart.Data.Oracle/9.5.381": {
+        "type": "package",
+        "dependencies": {
+          "Devart.Data": "5.0.1805",
+          "Microsoft.Win32.Registry": "4.4.0",
+          "System.Reflection.Emit": "4.3.0",
+          "System.Reflection.Emit.ILGeneration": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Devart.Data.Oracle.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Devart.Data.Oracle.dll": {}
+        }
+      },
       "Libuv/1.10.0": {
         "type": "package",
         "dependencies": {
@@ -3277,6 +3333,37 @@
           "ref/netstandard1.3/System.Console.dll": {}
         }
       },
+      "System.Data.Common/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0",
+          "System.Threading.Tasks": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.2/System.Data.Common.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.2/System.Data.Common.dll": {}
+        }
+      },
+      "System.Data.OracleClient/1.0.6": {
+        "type": "package",
+        "dependencies": {
+          "System.Data.Common": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Data.OracleClient.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Data.OracleClient.dll": {}
+        }
+      },
       "System.Data.SqlClient/4.4.0": {
         "type": "package",
         "dependencies": {
@@ -4750,6 +4837,47 @@
     }
   },
   "libraries": {
+    "Dapper/1.50.2": {
+      "sha512": "4sUecJaw/cXXq0nyM1qld+GcE+sKzEOEECotlbJN7hZRAY8c09sNWDY7MynUw0/W3hF+k9VPWu2RbEXGnJ8svA==",
+      "type": "package",
+      "path": "dapper/1.50.2",
+      "files": [
+        "Dapper.1.50.2.nupkg.sha512",
+        "Dapper.nuspec",
+        "lib/net40/Dapper.dll",
+        "lib/net40/Dapper.xml",
+        "lib/net45/Dapper.dll",
+        "lib/net45/Dapper.xml",
+        "lib/net451/Dapper.dll",
+        "lib/net451/Dapper.xml",
+        "lib/netstandard1.3/Dapper.dll",
+        "lib/netstandard1.3/Dapper.xml"
+      ]
+    },
+    "Devart.Data/5.0.1805": {
+      "sha512": "jH7Zo7+CQJa3tKxg9n1Y4VBdBXO8ntekgtjTWlKsswqvXcd3/oDD/VrKqHmSidEXlbosIXpeCUTbVUrt91jMTA==",
+      "type": "package",
+      "path": "devart.data/5.0.1805",
+      "files": [
+        "devart.data.5.0.1805.nupkg.sha512",
+        "devart.data.nuspec",
+        "lib/netstandard1.3/Devart.Data.dll",
+        "lib/netstandard2.0/Devart.Data.dll"
+      ]
+    },
+    "Devart.Data.Oracle/9.5.381": {
+      "sha512": "tWNSjkBcZ8ME5DZq0iSqG7v83su93Q9eGn6TL/f+CHavpn0klu8p17ObU+zItr2Mhg70d4Ze6LObNvabWGs1vA==",
+      "type": "package",
+      "path": "devart.data.oracle/9.5.381",
+      "files": [
+        "content/app.config.transform",
+        "content/web.config.transform",
+        "devart.data.oracle.9.5.381.nupkg.sha512",
+        "devart.data.oracle.nuspec",
+        "lib/netstandard1.3/Devart.Data.Oracle.dll",
+        "lib/netstandard2.0/Devart.Data.Oracle.dll"
+      ]
+    },
     "Libuv/1.10.0": {
       "sha512": "GsCf4q+eyaI49rCPlgYxdxa1SQCysXFFdSJWdstrwxytg4+VPYLYrXD4AT2rjHVJ+UF7SSWX9CapWEYaU4ejVQ==",
       "type": "package",
@@ -8541,6 +8669,65 @@
         "ref/xamarinwatchos10/_._",
         "system.console.4.3.0.nupkg.sha512",
         "system.console.nuspec"
+      ]
+    },
+    "System.Data.Common/4.3.0": {
+      "sha512": "lm6E3T5u7BOuEH0u18JpbJHxBfOJPuCyl4Kg1RH10ktYLp5uEEE1xKrHW56/We4SnZpGAuCc9N0MJpSDhTHZGQ==",
+      "type": "package",
+      "path": "system.data.common/4.3.0",
+      "files": [
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net451/System.Data.Common.dll",
+        "lib/netstandard1.2/System.Data.Common.dll",
+        "lib/portable-net451+win8+wp8+wpa81/System.Data.Common.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net451/System.Data.Common.dll",
+        "ref/netstandard1.2/System.Data.Common.dll",
+        "ref/netstandard1.2/System.Data.Common.xml",
+        "ref/netstandard1.2/de/System.Data.Common.xml",
+        "ref/netstandard1.2/es/System.Data.Common.xml",
+        "ref/netstandard1.2/fr/System.Data.Common.xml",
+        "ref/netstandard1.2/it/System.Data.Common.xml",
+        "ref/netstandard1.2/ja/System.Data.Common.xml",
+        "ref/netstandard1.2/ko/System.Data.Common.xml",
+        "ref/netstandard1.2/ru/System.Data.Common.xml",
+        "ref/netstandard1.2/zh-hans/System.Data.Common.xml",
+        "ref/netstandard1.2/zh-hant/System.Data.Common.xml",
+        "ref/portable-net451+win8+wp8+wpa81/System.Data.Common.dll",
+        "ref/portable-net451+win8+wp8+wpa81/System.Data.Common.xml",
+        "ref/portable-net451+win8+wp8+wpa81/de/System.Data.Common.xml",
+        "ref/portable-net451+win8+wp8+wpa81/es/System.Data.Common.xml",
+        "ref/portable-net451+win8+wp8+wpa81/fr/System.Data.Common.xml",
+        "ref/portable-net451+win8+wp8+wpa81/it/System.Data.Common.xml",
+        "ref/portable-net451+win8+wp8+wpa81/ja/System.Data.Common.xml",
+        "ref/portable-net451+win8+wp8+wpa81/ko/System.Data.Common.xml",
+        "ref/portable-net451+win8+wp8+wpa81/ru/System.Data.Common.xml",
+        "ref/portable-net451+win8+wp8+wpa81/zh-hans/System.Data.Common.xml",
+        "ref/portable-net451+win8+wp8+wpa81/zh-hant/System.Data.Common.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.data.common.4.3.0.nupkg.sha512",
+        "system.data.common.nuspec"
+      ]
+    },
+    "System.Data.OracleClient/1.0.6": {
+      "sha512": "IPHK/YcRZtcwkYVCjfTAg0Bxj4Mu13Oiy+CkL4k8cZzZZaL7QGQadbpVNTxuR7v+j9uKa0RznxHNefui0katmQ==",
+      "type": "package",
+      "path": "system.data.oracleclient/1.0.6",
+      "files": [
+        "lib/netstandard2.0/System.Data.OracleClient.dll",
+        "system.data.oracleclient.1.0.6.nupkg.sha512",
+        "system.data.oracleclient.nuspec"
       ]
     },
     "System.Data.SqlClient/4.4.0": {
@@ -12529,8 +12716,11 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "Dapper >= 1.50.2",
+      "Devart.Data.Oracle >= 9.5.381",
       "Microsoft.AspNetCore.All >= 2.0.3",
-      "Microsoft.NETCore.App >= 2.0.0"
+      "Microsoft.NETCore.App >= 2.0.0",
+      "System.Data.OracleClient >= 1.0.6"
     ]
   },
   "packageFolders": {
@@ -12565,6 +12755,7 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "http://10.2.4.61/nuget": {},
+        "https://nuget.telerik.com/nuget": {},
         "https://www.nuget.org/api/v2/": {}
       },
       "frameworks": {
@@ -12581,6 +12772,14 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "Dapper": {
+            "target": "Package",
+            "version": "[1.50.2, )"
+          },
+          "Devart.Data.Oracle": {
+            "target": "Package",
+            "version": "[9.5.381, )"
+          },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
             "version": "[2.0.3, )"
@@ -12589,6 +12788,10 @@
             "target": "Package",
             "version": "[2.0.0, )",
             "autoReferenced": true
+          },
+          "System.Data.OracleClient": {
+            "target": "Package",
+            "version": "[1.0.6, )"
           }
         },
         "imports": [
